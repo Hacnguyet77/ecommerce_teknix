@@ -24,21 +24,21 @@ export const cartPage: Partial<Page> = {
       },
       {
         type: 'p',
-        children: [
-          {
-            text: 'This cart saves to local storage so you can continue shopping later. Once you authenticate with Payload, your cart will sync to your user profile so you can continue shopping from any device. This hero and the content below the cart are completely dynamic and ',
-          },
-          {
-            type: 'link',
-            linkType: 'custom',
-            url: '/admin',
-            children: [
-              {
-                text: 'configured in the admin dashboard',
-              },
-            ],
-          },
-        ],
+        // children: [
+        //   {
+        //     text: 'This cart saves to local storage so you can continue shopping later. Once you authenticate with Payload, your cart will sync to your user profile so you can continue shopping from any device. This hero and the content below the cart are completely dynamic and ',
+        //   },
+        //   {
+        //     type: 'link',
+        //     linkType: 'custom',
+        //     url: '/admin',
+        //     children: [
+        //       {
+        //         text: 'configured in the admin dashboard',
+        //       },
+        //     ],
+        //   },
+        // ],
       },
     ],
   },
@@ -56,11 +56,11 @@ export const cartPage: Partial<Page> = {
           },
           richText: [
             {
-              children: [
-                {
-                  text: 'This is a custom layout building block configurable in the CMS—this can be anything you want. Related or suggested products, a blog post, video, etc.',
-                },
-              ],
+              // children: [
+              //   {
+              //     text: 'This is a custom layout building block configurable in the CMS—this can be anything you want. Related or suggested products, a blog post, video, etc.',
+              //   },
+              // ],
             },
           ],
         },

@@ -8,6 +8,8 @@ import { mergeOpenGraph } from '../../_utilities/mergeOpenGraph'
 import CreateAccountForm from './CreateAccountForm'
 
 import classes from './index.module.scss'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default async function CreateAccount() {
   await getMeUser({
@@ -17,11 +19,29 @@ export default async function CreateAccount() {
   })
 
   return (
-    <Gutter className={classes.createAccount}>
-      <h1>Create Account</h1>
-      <RenderParams />
-      <CreateAccountForm />
-    </Gutter>
+    <section className={classes.createAccount}>
+    <div className={classes.heroImg}>
+  <Link href="/">
+  <Image
+  src="/logo.svg"
+  alt="logo"
+  width={220}
+  height={23}
+  className={classes.logo}
+  />
+</Link>
+</div>
+<div className={classes.formWrapper}>
+<div className={classes.formContainer}>
+  <RenderParams className={classes.params}/>
+  <div className={classes.formTitle}>
+    <h3>Create Account</h3>
+  </div>
+  <div><CreateAccountForm/></div>
+</div>
+</div>
+<div/>
+  </section>
   )
 }
 

@@ -35,8 +35,8 @@ export const hero: Field = {
         },
         {
           label:'Custom Hero',
-          value:'customhero'
-        }
+          value:'customHero',
+        },
       ],
     },
     richText({

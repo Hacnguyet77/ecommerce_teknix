@@ -30,7 +30,7 @@ export default async function Checkout() {
 
   return (
     <Fragment>
-      {!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY && (
+      {/* {!process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY && (
         <Gutter>
           <Message
             className={classes.message}
@@ -57,7 +57,7 @@ export default async function Checkout() {
             }
           />
         </Gutter>
-      )}
+      )} */}
       <LowImpactHero
         type="lowImpact"
         media={null}
@@ -70,33 +70,33 @@ export default async function Checkout() {
               },
             ],
           },
-          {
-            type: 'paragraph',
-            children: [
-              {
-                text: `This is a self-hosted, secure checkout using Stripe's Payment Element component. To create a mock purchase, use a `,
-              },
-              {
-                type: 'link',
-                url: 'https://stripe.com/docs/testing#cards',
-                children: [
-                  {
-                    text: 'test credit card',
-                  },
-                ],
-              },
-              {
-                text: ' like ',
-              },
-              {
-                text: '4242 4242 4242 4242',
-                bold: true,
-              },
-              {
-                text: ' with any future date and CVC. An order will be generated in Stripe and will appear in your account. In production, this checkout form will require a real card with sufficient funds.',
-              },
-            ],
-          },
+          // {
+          //   type: 'paragraph',
+          //   children: [
+          //     {
+          //       text: `This is a self-hosted, secure checkout using Stripe's Payment Element component. To create a mock purchase, use a `,
+          //     },
+          //     {
+          //       type: 'link',
+          //       url: 'https://stripe.com/docs/testing#cards',
+          //       children: [
+          //         {
+          //           text: 'test credit card',
+          //         },
+          //       ],
+          //     },
+          //     {
+          //       text: ' like ',
+          //     },
+          //     {
+          //       text: '4242 4242 4242 4242',
+          //       bold: true,
+          //     },
+          //     {
+          //       text: ' with any future date and CVC. An order will be generated in Stripe and will appear in your account. In production, this checkout form will require a real card with sufficient funds.',
+          //     },
+          //   ],
+          // },
         ]}
       />
       <Gutter className={classes.checkoutPage}>

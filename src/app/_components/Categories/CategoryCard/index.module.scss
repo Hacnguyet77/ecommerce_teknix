@@ -1,0 +1,28 @@
+@use '../../../_css/queries.scss' as *;
+
+.card {
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  height: 150px;
+  font-size: inherit;
+  text-align: center;
+  text-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba($color: #c3e1a0, $alpha: 0.5);
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  p {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+

@@ -444,9 +444,9 @@ export const home: Partial<Page> = {
         },
         {
           children: [
-            {
-              text: 'This is a custom layout building block ',
-            },
+            // {
+            //   text: 'This is a custom layout building block ',
+            // },
             {
               type: 'link',
               linkType: 'custom',
