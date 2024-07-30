@@ -7,7 +7,6 @@ import Link from "next/link"
 import classes from './index.module.scss'
 import Image from "next/image"
 import { HeaderNav } from "../Nav"
-
 import { noHeaderFooterUrls } from "@/app/constants"
 import { usePathname } from "next/navigation"
 
@@ -22,12 +21,10 @@ const HeaderComponent = ({ header}: { header : Header}) => {
             <Link href="/">
             <Image src="/logo.svg" alt="logo" width={170} height={70}/>
             </Link>
-
             <HeaderNav header={header}/> 
             
         </Gutter>
       </nav>
     )
 }
-
 export default HeaderComponent
