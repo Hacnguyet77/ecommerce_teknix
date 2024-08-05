@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 import { Footer as FooterType} from '../../../payload/payload-types'
 import { fetchFooter } from '../../_api/fetchGlobals'
